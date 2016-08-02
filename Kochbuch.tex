@@ -1,0 +1,90 @@
+\documentclass[a4paper,twoside,12pt]{article}
+
+% Packages for table
+\usepackage{rotating}
+\usepackage{color}
+\usepackage[table,xcdraw]{xcolor}
+\definecolor{LightGray}{gray}{0.95}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman, english]{babel}
+
+\usepackage[inner=1.5cm, outer=1cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[handwritten]{xcookybooky}
+
+\usepackage{cancel}
+\usepackage[export]{adjustbox}
+
+
+\usepackage{hyperref}    % must be the last package
+\hypersetup{%
+    pdfauthor            = {Kilian Hähn, Ann-Kathrin Pullmann, Jonas Höchst},
+    pdftitle             = {Kochbuch für das Landeslager},
+    pdfsubject           = {Landeslager 2016},
+    pdfkeywords          = {Landeslager, 2016, VCP, Kochbuch}
+}
+
+\hbadness=10000    % Ignore underfull boxes
+\usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+    \includegraphics[width=.2\linewidth, right]{Zeichen.pdf}
+    % ~\\[1cm]
+    ~\\[2cm]
+    \includegraphics[width=0.8\textwidth]{Badge-crop.pdf}
+    ~\\[4cm] 
+    
+    % \normalsize{Landeslager 2016}\\
+	\Huge{\textbf{Kochbuch}}\\
+	{\large \textbf{Hessæhāven — Zeit zum Handeln}}\\
+\end{center}
+\clearpage
+
+\include{1-vorwort}
+
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\tableofcontents
+
+% \setBackgroundPicture[x, y=0, width=\paperwidth, height, orientation = pagecenter]{pic/Fingerprint}
+\refstepcounter{section}
+\addcontentsline{toc}{section}{\protect\numberline{\thesection}Rezepte}
+\sectionmark{Rezepte}
+
+\setHeadlines{
+    inghead = Zutaten,
+    prephead = Zubereitung,
+    hinthead = Tipp,
+}
+
+\include{tex/porridge}
+\include{tex/gruener-salat}
+\include{tex/bolognese}
+\include{tex/vegetarische-bolognese}
+\include{tex/griechischer-salat}
+\include{tex/gemuesecurry}
+\include{tex/chili-sin-carne}
+\include{tex/gurkensalat}
+\include{tex/bratkartoffeln-sour-cream}
+\include{tex/kartoffelgulasch}
+\include{tex/spaetzle-linsen}
+\include{tex/krautnudeln}
+\include{tex/gemueseeintopf}
+\include{tex/tuerkische-linsensuppe}
+\include{tex/spinat-sahne-sauce}
+\include{tex/schinken-sahne-sauce}
+\include{tex/eier-in-senfsosse}
+\include{tex/gruene-sose}
+\include{tex/kartoffelsalat}
+\include{tex/kaesespaetzle}
+\include{tex/risotto}
+\include{tex/milchreis}
+
+\include{4-sos}
+\include{5-wissen}
+\include{2-uebersicht}
+
+\end{document}

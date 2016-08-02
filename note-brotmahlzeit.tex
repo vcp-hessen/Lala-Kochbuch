@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{xparse}
+\usepackage{fontspec}
+\setmainfont{Bradley Hand}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\usepackage{lipsum}
+
+\definecolor{myyellow}{RGB}{242,226,149}
+
+\NewDocumentCommand\StickyNote{O{6cm}mO{6cm}}{%
+\begin{tikzpicture}
+\node[
+drop shadow={
+  shadow xshift=2pt,
+  shadow yshift=-4pt
+},
+inner xsep=7pt,
+fill=myyellow,
+xslant=0.05,
+yslant=-0.05,
+inner ysep=10pt
+] {\parbox[t][#1][c]{#3}{#2}};
+\end{tikzpicture}%
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\StickyNote{\large \underline{Brotmahlzeit:}\\
+Brot\\
+Käse \& Wurst\\
+Frischkäse\\
+Tomaten, Gurken \& Paprika\\
+vegetarischer Aufstrich\\
+Schokocreme\\
+Marmelade\\
+~\\
+Ob ihr zum Mittagessen auch Marmelade und Schoki essen wollt, dürft ihr selbst entscheiden ;-)}
+
+% \StickyNote[2.5cm]{\LARGE As \underline{who}, I want\\[4ex]\underline{what} so that \underline{why}}[6.5cm]
+
+\end{document}
