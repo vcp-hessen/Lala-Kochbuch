@@ -16,4 +16,4 @@ Das Kochbuch ist mithilfe des LaTeX Package [xcookybooky](https://www.ctan.org/p
 
 ## Beispielrezept: Gemüsecurry
 
-![Rezept für Gemüsecurry](Gemüsecurry.jpg)
+![Rezept für Gemüsecurry](Curry.jpg)
