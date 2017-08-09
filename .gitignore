@@ -1,3 +1,5 @@
 *.lb
 *.aux
 *.toc
+*.out
+*.synctex.gz
