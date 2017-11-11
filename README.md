@@ -1,4 +1,4 @@
-# Landelager Kochbuch
+# Landeslager Kochbuch
 
 Dieses Repository beinhaltet das Kochbuch des Landeslagers 2016 in Großzerlang. Es ist in LaTeX gesetzt und in einzelne Rezepte unterteilt. Es kann gut restruktiriert und erweitert werden.
 
